@@ -1,0 +1,22 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jingsongproject?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+  web:
+    resources:
+      static-locations: classpath:/templates
+
+#  thymeleaf:
+#    cache: false
+#    prefix: classpath:/templates
+#    check-template-location: true
+#    suffix: .html
+
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
